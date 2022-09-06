@@ -1,0 +1,38 @@
+$breakpointMobile: 768px
+$breakpointTablet: 1023px
+$breakpointDesktop: 1215px
+$breakpointWidescreen: 1407px
+
+@media screen and (max-width: $breakpointMobile)
+    section .container
+        width: 90%
+    .sectiontwo
+        p
+            width: 100%
+        .phone
+            text-align: center
+    .sectionfour
+        .container
+            width: fit-content
+            margin-bottom: 0px
+        .content
+            height: fit-content
+        .column
+            padding: 3rem
+    .sectionfive
+        .reverse-columns
+            flex-direction: column-reverse !important
+            display: flex !important
+    .sectionform
+        padding: 50px 0px
+        h2
+            width: 60%
+
+@media screen and (max-width: $breakpointTablet)
+    html.has-navbar-fixed-top
+        padding-top: 5.75rem !important
+    .navbar
+        .navbar-dropdown
+            .navbar-item
+                .navbar-dropdown
+                    margin-left: 0%
